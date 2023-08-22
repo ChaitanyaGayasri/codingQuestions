@@ -2,7 +2,7 @@
 
 const findDuplicatesArray = (arr)  => {
   let sortedArray = arr.slice().sort() // [2,3,3,4,4,5,6,7,9,9]
-  
+                                        // 0,1,2,3,4,5,6,7,8,9 Indexing Values
   let results = []
   for (let i= 0; i< sortedArray.length-1;i++){ // 0 1 2 3 4 5 6 7 8,9
   
@@ -18,8 +18,46 @@ const findDuplicatesArray = (arr)  => {
 
 let array = [9,9,2,3,3,4,4,5,6,7,]
 
-console.log(findDuplicatesArray(array)) 
+console.log(findDuplicatesArray(array)) //[3,4,9] solution
 
+
+// 2) compare two srings charcters are different 
+
+let str1 = "codehere"
+let str2 = "ocdehere"
+
+function checkString(val1,val2) {
+  let arra1 = val1.split("").sort().join("") // split method what it will do it will split the str values like ['c','o'] , join method join the values of elements in arra 
+  let arra2 = val2.split("").sort().join("") // sort method what it will do sort the values of str values like [c,d,e,h,o,r] get all elements in one manner 
+
+  
+  if (arra1 === arra2){
+    return true
+  }else {
+    return false
+  }
+  
+}
+
+console.log(checkString(str1,str2))  // true or cdeehor,cdeehor
+
+
+
+3) 
+let arr = ["aaa","bbb","ccc","aaa","bbb"]
+
+let obj = {}
+for (let i=0; i< arr.length; i++){
+  let item = arr[i]
+  if (obj[item]){
+    obj[item] = obj[item] + 1
+  }else{
+    obj[item] = 1
+  }
+
+}
+
+console.log(obj) // { aaa: 2, bbb: 2, ccc: 1 } solution
 
 2) FEATURES OF DBMS:
 
