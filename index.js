@@ -43,7 +43,8 @@ console.log(checkString(str1,str2))  // true or cdeehor,cdeehor
 
 
 
-3) 
+3) Find out The Duplicate array 
+
 let arr = ["aaa","bbb","ccc","aaa","bbb"]
 
 let obj = {}
