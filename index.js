@@ -59,6 +59,36 @@ for (let i=0; i< arr.length; i++){
 }
 
 console.log(obj) // { aaa: 2, bbb: 2, ccc: 1 } solution
+ 
+4) HOW TO MAKE A API FETCH CALL 
+
+recyle methds ;
+1) MOUNTING PHASE: CONSTRUCTOR METHOD OR STATE METHOD 
+2) UPDATING PHASE: RENDER()
+3) UNMOUNTING PHASE: 1) componentDidMount  and componentWillMount only
+
+state = {blogsData: []}
+
+  componentDidMount() {   MAKE A API CALL ONLY componentDidMount Only
+    this.getBlogsData()
+  }
+
+  getBlogsData = async () => {   
+    const Response = await fetch('https://apis.ccbp.in/blogs')   fetch method fetch all the details of url 
+    const Data = await Response.json()   Data which we are  // promise object  & json object always have a snake case characters so we need to convert that into frontend part is only look for camel case 
+    const updateData = Data.map(eachItem => ({   iterating over through an map returns a new array
+      id: eachItem.id,         
+      title: eachItem.title,
+      imageUrl: eachItem.image_url,
+      avatarUrl: eachItem.avatar_url,
+      topic: eachItem.topic,
+      author: eachItem.author,
+    }))
+    this.setState({blogsData: updateData}) 
+  }
+
+
+
 
 2) FEATURES OF DBMS:
 
