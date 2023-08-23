@@ -60,7 +60,7 @@ for (let i=0; i< arr.length; i++){
 
 console.log(obj) // { aaa: 2, bbb: 2, ccc: 1 } solution
  
-4) HOW TO MAKE A API FETCH CALL 
+4) HOW TO MAKE A API FETCH CALL IN AN APPLICATION:
 
 recyle methds ;
 1) MOUNTING PHASE: CONSTRUCTOR METHOD OR STATE METHOD 
