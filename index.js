@@ -88,7 +88,7 @@ state = {blogsData: []}
   }
 
 
-FUNCTION BINDING : 
+5)    FUNCTION BINDING : 
 
 In JavaScript function binding happens using Bind() method. With this method, we can bind an object to a common function, 
 so that the function gives different results when needed. otherwise, it gives the same result or gives an error while the code is executing. 
@@ -107,6 +107,23 @@ let geeks = {
   
 geeks.printFunc();
 
+
+
+6)   /Input = [4,5,6,7,0,1,2] target = 0 
+// inpu2 = [4,5,6,7,0,1,2] target = 3
+
+const linearSearch = (arr, target) => {
+  
+  for (var i = 0; i < arr.length; i++) {
+    if (target === arr[i]){ // values are equal or not check then it will update true otherwise it will not update the values
+      return i
+    }
+  }
+  
+  return -1
+}
+console.log(linearSearch([4,5,6,7,0,1,2] , 0))
+console.log(linearSearch([4,5,6,7,0,1,2] , 3))
 
 2) FEATURES OF DBMS:
 
