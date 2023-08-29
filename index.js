@@ -125,6 +125,33 @@ const linearSearch = (arr, target) => {
 console.log(linearSearch([4,5,6,7,0,1,2] , 0))
 console.log(linearSearch([4,5,6,7,0,1,2] , 3))
 
+
+
+EXAMPLE 2 :
+
+function linearSearch(num,target) {
+  let start = 0
+  let end = num.length-1
+  
+  while(start <= end) {
+    let middle = Math.floor((start + end) / 2)
+    
+    if (num[middle] === target){
+      return middle
+    }else if(num[middle] < target) {
+      start = middle + 1
+    }else {
+      end = middle -1
+    }
+  }
+  return -1
+}
+console.log(linearSearch([-1,0,3,5,9,12] , 9))
+console.log(linearSearch([-1,0,3,5,9,12] , 2))
+
+
+
+
 2) FEATURES OF DBMS:
 
 ✅Key Features of MongoDB:🌟
