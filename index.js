@@ -67,7 +67,55 @@ const productItem = (arr) => {
 }
 console.log(productItem(products))
   
+3)  Double The Prices of array of an object :
+
+const products = [
   
+  { id: 1,
+    category: "Electronics",
+    type: "Mobile",
+    name: "Iphone",
+    price: "50000"
+  },
+  
+  {
+    id: 2,
+    category: "Electronics",
+    type: "Tv",
+    name: "Lg",
+    price: "20000",
+  },
+  
+  { id: 3,
+    category: "Electronics",
+    type: "Mobile",
+    name: "Samsung",
+    price: "40000"
+  }
+  
+  
+  ]
+
+const calculateSum = (arr) => {
+  const FilterMobiles = arr.filter((item) => { // filter method 
+    if (item.type == "Mobile") {
+      return item
+    }
+  })
+  
+  const totalPrice = FilterMobiles.reduce((accumulator, currentValue) =>{  // accumulator is previous value a
+    return parseInt(accumulator.price) + parseInt(currentValue.price) // parseInt the values like convert str to number
+  })
+  
+  return totalPrice
+}
+console.log(calculateSum(products))
+  
+  
+  
+  
+  
+
   
   
   
