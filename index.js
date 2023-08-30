@@ -112,7 +112,24 @@ const calculateSum = (arr) => {
 console.log(calculateSum(products))
   
   
+  //  Remove the duplicate numbers in an array
+4) var numbers = [1,3,3,5,5,7,8]
+
+
+const removeDuplicate = (arr) => {
+  let object = {} // {1: true,3: true, 5:true,7: true,8:true}
+  let result = [] // [1,3,5,7,8]
   
+  for (let i =0; i < arr.length; i++){
+    if(!object[arr[i]]){
+      result.push(arr[i])
+    }
+    object[arr[i]] = true
+  }
+  return result
+}
+
+console.log(removeDuplicate(numbers))
   
   
 
