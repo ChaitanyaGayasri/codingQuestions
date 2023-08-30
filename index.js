@@ -132,7 +132,7 @@ const removeDuplicate = (arr) => {
 console.log(removeDuplicate(numbers))
 
   
-4) Sum Of digits in an array
+5) Sum Of digits in an array
 let number = 123;
 
 const sumDigits = (num) =>{
@@ -147,6 +147,17 @@ const sumDigits = (num) =>{
 console.log(sumDigits(number))  
   
   
+6)  / compute the exponent of number
+const power = (base,exp) => {
+  if (exp === 0) return 1  // 1
+  return base * power(base, exp-1) // recursive case 
+}
+console.log(power(2,4)) // 16
+// 2 * (2, 3) -> 8
+// 2* (2, 2) -> 4
+// 2 * (2, 1)-> 2
+//2 * (2, 0) -> 1
+
 
 
 
