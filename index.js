@@ -130,10 +130,21 @@ const removeDuplicate = (arr) => {
 }
 
 console.log(removeDuplicate(numbers))
-  
-  
 
   
+4) Sum Of digits in an array
+let number = 123;
+
+const sumDigits = (num) =>{
+  let arr = num.toString().split("").map(Number) // [1,2,3]
+  
+  return arr.reduce((acc, curr) => {
+    let sum = acc + curr
+    return sum
+  })
+}
+
+console.log(sumDigits(number))  
   
   
 
