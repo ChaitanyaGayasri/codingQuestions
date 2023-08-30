@@ -1,3 +1,91 @@
+DATA STRUCTURES AND ALGORITHEMS OF JAVASCRIPT QUESTIONS
+
+Sorting an array Without using index values;
+
+Qestion1); Sorting an array
+
+
+const bubbleSort = (arr) => {
+  let len = arr.length
+  for (let i=0; i < len; i++) {
+    for(let j=0; j < len; j++){  // 0,1,2,3,4
+      if (arr[j] > arr[j + 1] ) {
+      let temp = arr[j]
+      arr[j] = arr[j + 1]
+      arr[j+1] = temp
+      }
+    }
+  }
+  
+  return arr
+  
+}
+console.log(bubbleSort([1,2,3,4,5]))
+
+
+
+2) Double The Price of array of objects
+
+const products = [
+  
+  { id: 1,
+    category: "Electronics",
+    type: "Mobile",
+    name: "Iphone",
+    price: "50000"
+  },
+  
+  {
+    id: 2,
+    category: "Electronics",
+    type: "Tv",
+    name: "Lg",
+    price: "20000",
+  },
+  
+  { id: 1,
+    category: "Electronics",
+    type: "Mobile",
+    name: "Samsung",
+    price: "40000"
+  }
+  
+  
+  ]
+
+const productItem = (arr) => {
+  return arr.map((Item) => {
+    if (Item.type == "Mobile"){ 
+      return {
+        ...Item, // Rest oprator to unpack all the elements of Item
+        price: Item.price * 2 // Double the price an item
+         
+       }
+    }
+    return Item;
+  })
+}
+console.log(productItem(products))
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // 1) Find Duplicate numbers in an array
 
 const findDuplicatesArray = (arr)  => {
@@ -133,10 +221,10 @@ function linearSearch(num,target) {
   let start = 0
   let end = num.length-1
   
-  while(start <= end) {
-    let middle = Math.floor((start + end) / 2)
+  while(start <= end) {  // iterate 0 to 5
+    let middle = Math.floor((start + end) / 2) // here midile value 2.5 math floor convert value to 3 ex. (0 + 5)/  2 = 2.5 convert 3
     
-    if (num[middle] === target){
+    if (num[middle] === target){  // check
       return middle
     }else if(num[middle] < target) {
       start = middle + 1
