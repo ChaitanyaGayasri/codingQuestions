@@ -159,12 +159,33 @@ console.log(power(2,4)) // 16
 //2 * (2, 0) -> 1
 
 
+7) Reverse a String or Number
+
+const reverseString = (str) =>{
+  let result = ""
+  for (let i = str.length -1; i >= 0; i--) { // reverse the whole string
+    result += str[i]
+  }
+  return result
+}
+
+console.log(reverseString("welcome to web pack group)) //puorg kcap bew ot emoclew
 
 
+8)   
+// Find the Missing Number From 1 to n
+const missingNumber = (arr) => {
+  let result = 0
+  let n = arr.length + 1
+  let totalNum = n * (n+1) / 2 // 28
+  
+  for (let i=0; i < arr.length; i++){
+    result += arr[i]// add the num like 5, 5+2=7, 7 + 6 = 13,13+1= 14,14+3=17, 17+7=24
+  }
+  return totalNum - result // 28 -24 = 4
+}
 
-
-
-
+console.log(missingNumber([5,2,6,1,3,7]))
 
 
 
