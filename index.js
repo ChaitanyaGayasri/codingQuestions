@@ -187,8 +187,38 @@ const missingNumber = (arr) => {
 
 console.log(missingNumber([5,2,6,1,3,7]))
 
+9)   // Fibonacci number 
+
+// Fibonacci Series  -> 0,1,1,2,3,5,8,13,21,34...
+// F(0) = 0, F(1) = 1
+// F(n) = F(n-1) + F(n-2) 
+
+// Input n = 3  output = 2
 
 
+var Fibonacci = function(num) {
+  const arr = [0,1]
+  
+  for (let i = 2; i <= num; i++) {
+    arr.push(arr[i-1] + arr[i-2])
+  }
+  console.log(arr)
+  return arr[num]
+}
+
+console.log(Fibonacci(5))
+
+10)   / palindrome Number 
+// an integer is an palindrome when it reads same forward and backward
+const isPalandrome = (num) => {
+  return num === +num.toString().split("").reverse().join("")
+}
+
+console.log(isPalandrome(121)) // or 11
+
+// split method convert str no to split the ["1","2","3"]
+// reverse method what it will do the reverse the number 
+// join methos what it will do join the strings 
 
 
 
@@ -345,19 +375,6 @@ function linearSearch(num,target) {
 console.log(linearSearch([-1,0,3,5,9,12] , 9))
 console.log(linearSearch([-1,0,3,5,9,12] , 2))
 
-
-Example -3
-/ palindrome Number 
-// an integer is an palindrome when it reads same forward and backward
-const isPalandrome = (num) => {
-  return num === +num.toString().split("").reverse().join("")
-}
-
-console.log(isPalandrome(121)) // or 11
-
-// split method convert str no to split the ["1","2","3"]
-// reverse method what it will do the reverse the number 
-// join methos what it will do join the strings 
 
 
 INBUILT JAVASCRIPT METHODS
