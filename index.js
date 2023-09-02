@@ -346,6 +346,20 @@ console.log(linearSearch([-1,0,3,5,9,12] , 9))
 console.log(linearSearch([-1,0,3,5,9,12] , 2))
 
 
+Example -3
+/ palindrome Number 
+// an integer is an palindrome when it reads same forward and backward
+const isPalandrome = (num) => {
+  return num === +num.toString().split("").reverse().join("")
+}
+
+console.log(isPalandrome(121)) // or 11
+
+// split method convert str no to split the ["1","2","3"]
+// reverse method what it will do the reverse the number 
+// join methos what it will do join the strings 
+
+
 INBUILT JAVASCRIPT METHODS
 // Arrays in Javascript
 
