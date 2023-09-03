@@ -238,6 +238,23 @@ console.log(isPalandrome(121)) // or 11
  
  //output 
 
+12)
+// two sum 
+// given an integers of nums and an integer target
+//return indices of two numbers such that they add up to the target
+// Input nums = [2,7,11,15], target = 9
+
+const twoSum = function(nums,target) {
+  for (let i=0; i < nums.length; i++) {
+    for (let j = i+1; j< nums.length; j++) {
+      if (nums[i] + nums[j] === target){
+        return [i,j]
+      }
+    }
+  }
+}
+
+console.log(twoSum([2,7,11,15],9))
 
 
 // 1) Find Duplicate numbers in an array
