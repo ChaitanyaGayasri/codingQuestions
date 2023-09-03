@@ -220,7 +220,23 @@ console.log(isPalandrome(121)) // or 11
 // reverse method what it will do the reverse the number 
 // join methos what it will do join the strings 
 
+11) 
+// Valid IsAnagram 
 
+// Input = s = ("anagram"), (t= "nagaram") output = true
+// Input = t = ("rat"), (t="car") output = false
+
+ const isAnagram1 = function(s,t){
+  s = s.split("").sort().join("")
+  t = s.split("").sort().join("")  
+  console.log(s)  // aaagmnr
+  console.log(t)  // aaagmnr
+  return s === t
+ }
+ 
+ console.log(isAnagram1("anagram","nagaram"));
+ 
+ //output 
 
 
 
