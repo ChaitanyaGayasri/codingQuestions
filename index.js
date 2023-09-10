@@ -109,7 +109,7 @@ const calculateSum = (arr) => {
   
   return totalPrice
 }
-console.log(calculateSum(products))
+console.log(calculateSum(products)) //90,000
   
   
   //  Remove the duplicate numbers in an array
