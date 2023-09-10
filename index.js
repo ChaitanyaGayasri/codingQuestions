@@ -11,7 +11,7 @@ const bubbleSort = (arr) => {
     for(let j=0; j < len; j++){  // 0,1,2,3,4
       if (arr[j] > arr[j + 1] ) {
       let temp = arr[j]
-      arr[j] = arr[j + 1]
+      arr[j] = arr[j + 1]// Swaping thier position
       arr[j+1] = temp
       }
     }
