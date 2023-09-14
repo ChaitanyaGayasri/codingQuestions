@@ -144,7 +144,7 @@ const sumDigits = (num) =>{
   })
 }
 
-console.log(sumDigits(number))  
+console.log(sumDigits(number)) //6 
   
   
 6)  / compute the exponent of number
