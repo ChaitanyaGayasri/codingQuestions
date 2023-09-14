@@ -12,7 +12,7 @@ const bubbleSort = (arr) => {
       if (arr[j] > arr[j + 1] ) {
       let temp = arr[j]
       arr[j] = arr[j + 1]// Swaping thier position
-      arr[j+1] = temp
+      arr[j+1] = temp // Reverse the position
       }
     }
   }
