@@ -381,8 +381,8 @@ const linearSearch = (arr, target) => {
   
   return -1
 }
-console.log(linearSearch([4,5,6,7,0,1,2] , 0))
-console.log(linearSearch([4,5,6,7,0,1,2] , 3))
+console.log(linearSearch([4,5,6,7,0,1,2] , 0))//4
+console.log(linearSearch([4,5,6,7,0,1,2] , 3))//-1
 
 
 
