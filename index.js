@@ -263,7 +263,7 @@ const findDuplicatesArray = (arr)  => {
   let sortedArray = arr.slice().sort() // [2,3,3,4,4,5,6,7,9,9]
                                         // 0,1,2,3,4,5,6,7,8,9 Indexing Values
   let results = []
-  for (let i= 0; i< sortedArray.length-1;i++){ // 0 1 2 3 4 5 6 7 8,9
+  for (let i= 0; i< sortedArray.length-1;i++){ // 0 1 2 3 4 5 6 7 8
   
     if (sortedArray[i+1] === sortedArray[i]) {  // Here it will check index wise if values are findout duplicate number then it will  updated on new array. 
     // 
@@ -414,29 +414,13 @@ INBUILT JAVASCRIPT METHODS
 // Arrays in Javascript
 
 // Decalaration
-let person = {
-  name: "Piyush",
-  age: 25,
-};
+let arr = ["apple", "banana", "cherry"];
 
-let arr = ["apple", "banana", "cherry", person];
-
-console.log(arr.length); // know the length of an array
-
-// # Add and Remove Elements
-
-// Add to End of the Array
-arr.push("orange");
-
-// Remove From End of the Array
-arr.pop();
-arr.pop();
-
-// Add to Top of the Array
-arr.unshift("orange");
-
-// Remove From Top of the Array
-arr.shift();
+arr.push("orange")// add end of an array
+arr.pop() // remove end of an array
+arr.unshift("orange") // add top of an array
+arr.shift() // remove top of an array
+console.log(arr)
 
 // # Looping Arrays
 
