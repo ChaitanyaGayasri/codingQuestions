@@ -533,6 +533,22 @@ const unsorted = [5, 2, 10, 7, 3, 1];
 unsorted.sort((a, b) => b - a);
 console.log(unsorte
 
+//  A Simple Promise Object
+const testPromise = new Promise((resolve, reject) => {
+  let value = 2;
+
+  if (value < 4) {
+    resolve('value is less than 4');
+  } else {
+    reject('value is greater sthan 5');
+  }
+});
+testPromise
+  .then((res) => {
+    console.log('success: ===>', res);
+  })
+  .catch((err) => console.log('error: ===>', err));
+
 
 2) FEATURES OF DBMS:
 
