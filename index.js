@@ -136,7 +136,7 @@ console.log(removeDuplicate(numbers))
 let number = 123;
 
 const sumDigits = (num) =>{
-  let arr = num.toString().split("").map(Number) // [1,2,3]
+  let arr = num.toString().split("").map(Number) // convert normal number to array like [1,2,3] 
   
   return arr.reduce((acc, curr) => {
     let sum = acc + curr
@@ -163,7 +163,7 @@ console.log(power(2,4)) // 16
 
 const reverseString = (str) =>{
   let result = ""
-  for (let i = str.length -1; i >= 0; i--) { // reverse the whole string
+  for (let i = str.length -1; i >= 0; i--) { // reverse the whole string and Values
     result += str[i]
   }
   return result
