@@ -534,6 +534,52 @@ testPromise
   .catch((err) => console.log('error: ===>', err));
 
 
+>>>>>>>>     // Implicit Conversion:
+// 1) impilicit Conversion to string:
+
+// numeric string used with + gives string type
+
+ let result = "3" + 2    // When try to use the addition plus symbol between string posetitionit concate both the values 
+ let result2 = "3" + "2" 
+console.log(result) // 32
+console.log(result2) // 32
+
+// 2) impilicit conversion to Number:
+
+// numeric string used with -,/,* results number type
+
+let res3 = "4"-"2" // when try to use - or * or / symbol between string positions 
+let res4 = "4" * "2"// symbols are very importent
+let res5 = "4" / "2" 
+console.log(res3)// 2
+console.log(res4)// 8
+console.log(res5)// 2
+
+// 3) impilicit conversion to boolean:
+
+// if Boolean is used true is 1 , false is 0
+let result6 = "4" - true
+let result7 = "4" - false
+
+console.log(result6)//3
+console.log(result7)//4
+
+
+let result8 = "Hello" - "WOrld" // "Hello" + "WOrld" // HelloWorld
+console.log(result8)//NaN
+
+// Explicit Conversion:
+// convert numeric strings and Boolean values to numbers , you can use Number()
+
+let result9 = Number("324")
+console.log(result9) // 324 it convert to Number data type
+
+// convert other data type to string you can use either String() or toString() 
+let result10 = string(324)
+console.log(result10)//"324" convert number to string
+
+
+
 2) FEATURES OF DBMS:
 
 ✅Key Features of MongoDB:🌟
