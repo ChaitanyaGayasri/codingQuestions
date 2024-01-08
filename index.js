@@ -160,7 +160,7 @@ console.log(power(2,4)) // 16
 
 
 7) Reverse a String or Number
-
+1)
 const reverseString = (str) =>{
   let result = ""
   for (let i = str.length -1; i >= 0; i--) { // reverse the whole string and Values
@@ -170,7 +170,11 @@ const reverseString = (str) =>{
 }
 
 console.log(reverseString("welcome to web pack group)) //puorg kcap bew ot emoclew
+2) function reverseString(str) {
+  console.log(str.split("").reverse().join(""))
+}
 
+reverseString("My Name Is Chaitanya")
 
 8)   
 // Find the Missing Number From 1 to n
