@@ -233,8 +233,14 @@ const isPalandrome = (num) => {
   return num === +num.toString().split("").reverse().join("")
 }
 
-console.log(isPalandrome(121)) // or 11
+console.log(isPalandrome(121)) // true
+// Write a function that checks weather a given string is palindrome or not 
 
+const isPalindrome = (str) => {
+  let reverseStr = str.split("").reverse().join("")
+  console.log(str === reverseStr) // True
+}
+isPalindrome("racecar")
 // split method convert str no to split the ["1","2","3"]
 // reverse method what it will do the reverse the number 
 // join methos what it will do join the strings 
