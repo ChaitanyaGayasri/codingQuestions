@@ -325,9 +325,22 @@ function checkString(val1,val2) {
 
 console.log(checkString(str1,str2))  // true or cdeehor,cdeehor
 
+// Remove duplicates from an array 
 
+const removeDuplicate = (arr) => {
+  let emptyArray = []
+  for (let i=0; i < arr.length; i++){
+    if (emptyArray.indexOf(arr[i]) === -1) {
+      emptyArray += arr[i]
+    }
+  }
+  console.log(emptyArray)
 
-3) Find out The Duplicate array 
+}
+
+removeDuplicate([1,2,3,3,4,4,5,6,6]) // 123456
+
+3) Find out The Duplicate string
 
 let arr = ["aaa","bbb","ccc","aaa","bbb"]
 
