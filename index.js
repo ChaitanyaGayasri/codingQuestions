@@ -39,6 +39,26 @@ longestWord("My Name is Chaitanya")
 
 
 
+
+
+Question) // sum of digits in a normal number into array num 
+
+const numberOfVowels = (str1) => {
+  numner = 0
+  vowels = ["a","e","i","o","u"]
+  
+  for (let char of str1.toLowerCase()){
+    if (vowels.includes(char)){
+      numner = numner + 1
+    }
+  }
+  console.log(numner)
+}
+
+numberOfVowels("Hellow, World")
+
+
+
 2) Double The Price of array of objects
 
 const products = [
