@@ -41,7 +41,7 @@ longestWord("My Name is Chaitanya")
 
 
 
-Question) // sum of digits in a normal number into array num 
+2) // write a function that returns the number of vowels in a string
 
 const numberOfVowels = (str1) => {
   numner = 0
