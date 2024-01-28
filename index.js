@@ -22,7 +22,7 @@ const bubbleSort = (arr) => {
 }
 console.log(bubbleSort([5,4,3,2,1]) // [1,2,3,4,5]
 
-2)   // Write a function that returns the longest word in the sentence
+2)   // Write a function that returns the longest word in the sentence returns the string
 
 
 const longestWord = (str) => {
