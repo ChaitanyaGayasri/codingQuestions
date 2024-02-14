@@ -22,8 +22,29 @@ const bubbleSort = (arr) => {
 }
 console.log(bubbleSort([5,4,3,2,1]) // [1,2,3,4,5]
 
-2)   // Write a function that returns the longest word in the sentence returns the string
+DSA )     
+// KADENES ALGORITHEM - DSA
+// SubArray means adding array of elements one by one 
+function largestSubArray(arr) {
+  
+  let maxSum = arr[0]
+  for (let i=0; i<arr.length; i++){
+    let currentSum = 0
+    for (let j=i; j<arr.length; j++) {
+      currentSum = currentSum + arr[j] 
+      console.log(currentSum)// it will add 0 + -2 = -2 or -2 + 1 = -1 etc
+      if (currentSum > maxSum){
+        maxSum = currentSum
+      }
+    }
+  }
+  return maxSum
+}
 
+console.log(largestSubArray([-2,1,-3,4,-1,2,1,-5,4]))
+            
+
+2)   // Write a function that returns the longest word in the sentence returns the string
 
 const longestWord = (str) => {
   let splitStr = str.split(" ")
@@ -305,7 +326,7 @@ console.log(twoSum([2,7,11,15],9))
 // 1) Find Duplicate numbers in an array
 
 const findDuplicatesArray = (arr)  => {
-  let sortedArray = arr.slice().sort() // [2,3,3,4,4,5,6,7,9,9]
+  let sortedArray = arr.slice().sort() // [2,3,3,4,4,5,6,7,9,9] sorting those elements
                                         // 0,1,2,3,4,5,6,7,8,9 Indexing Values
   let results = []
   for (let i= 0; i< sortedArray.length-1;i++){ // 0 1 2 3 4 5 6 7 8
@@ -474,10 +495,10 @@ INBUILT JAVASCRIPT METHODS
 // Decalaration
 let arr = ["apple", "banana", "cherry"];
 
-arr.push("orange")// add end of an array
-arr.pop() // remove end of an array
-arr.unshift("orange") // add top of an array
-arr.shift() // remove top of an array
+arr.push("orange")// add new element to end of an array
+arr.pop() // remove an element end of an array
+arr.unshift("orange") // add an element to top of an array
+arr.shift() // remove an element to top of an array
 console.log(arr)
 
 // # Looping Arrays
@@ -597,7 +618,7 @@ testPromise
 
 // numeric string used with + gives string type
 
- let result = "3" + 2    // When try to use the addition plus symbol between string posetitionit concate both the values 
+ let result = "3" + 2    // When try to use the addition plus symbol between string posetition it concate both the values 
  let result2 = "3" + "2" 
 console.log(result) // 32
 console.log(result2) // 32
