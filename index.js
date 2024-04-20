@@ -47,11 +47,11 @@ console.log(largestSubArray([-2,1,-3,4,-1,2,1,-5,4])) // 6 [4,-1,2,1]
 2)   // Write a function that returns the longest word in the sentence returns the string
 // find out the longest word in the string or array
 const longestWord = (str) => {
-  let splitStr = str.split(" ")
+  let splitStr = str.split(" ") // using split method we pass the strings inside brackets without using space return the single values or with space will return the arr of values 
   largestWord = ""
-  for (let word of splitStr){
-    if (word.length > largestWord.length){
-      largestWord = word
+  for (let word of splitStr){ // loop through those ele 
+    if (word.length > largestWord.length){ // find out the length values and compare it with largestword 
+      largestWord = word //   replace which ele as highest value 
     }
   }
   console.log(largestWord) // Chaitanya
