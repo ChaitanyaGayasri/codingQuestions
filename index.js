@@ -177,8 +177,8 @@ const removeDuplicate = (arr) => {
   let result = [] // [1,3,5,7,8]
   
   for (let i =0; i < arr.length; i++){
-    if(!object[arr[i]]){
-      result.push(arr[i])
+    if(!object[arr[i]]){  // not operator it will check the arr of elements if the value is their return the true or false
+      result.push(arr[i]) // pushing the ele in an array
     }
     object[arr[i]] = true
   }
@@ -193,7 +193,7 @@ let number = 123;
 
 const sumDigits = (num) =>{
   let arr = num.toString().split("").map(Number) // convert normal number to array like [1,2,3] 
-  
+//let arr = +num // 123  
   return arr.reduce((acc, curr) => {
     let sum = acc + curr
     return sum
