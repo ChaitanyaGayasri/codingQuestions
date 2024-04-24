@@ -1,0 +1,158 @@
+
+JAVASCRIPT BUILT IN ARRAY METHODS:
+
+1)toString() Method:
+
+toString() method return string with of array of values
+
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+
+console.log(bikes.toString()) // "yamaha,Bajaj,Honda,Tvs"
+
+2) join() method:
+
+join() method returns new string by concatenating all the elements of array
+
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+
+console.log(bikes.join()) //"yamaha,Bajaj,Honda,Tvs"
+console.log(bikes.join(" "))// yamaha Bajaj Honda Tvs
+
+3) pop();
+pop() method removes the last element of any array and it returns removed element
+
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+
+console.log(bikes.pop()) // Tvs
+console.log(bikes) // [ 'yamaha', 'Bajaj', 'Honda' ]
+
+
+4) push() method:
+push method adds new items to the end of an array and it changes the length of an array
+
+
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+
+console.log(bikes.push("Ducatti"))
+console.log(bikes) //[ 'yamaha', 'Bajaj', 'Honda', 'Tvs', 'Ducatti' ]
+ 
+ 
+  5)  shift() method:
+  the shift() method removes the first element and return it 
+ 
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+ 
+console.log(bikes.shift()) // yamaha removes the first element
+ 
+6) unshift() method:
+
+the unshift method adds elements to beginging  
+
+let bikes = ["yamaha","Bajaj","Honda","Tvs"]
+console.log(bikes.unshift("Ducatti"))
+console.log(bikes) [ 'Ducatti', 'yamaha', 'Bajaj', 'Honda', 'Tvs' ]
+
+
+
+7) concat();
+
+the concat method concat two or more arrays return new array
+
+let arr1 = [1,2,3,4,5]
+let arr2 = [1,2,3]
+let arr3 = arr1.concat(arr2)
+console.log(arr3) //  [1, 2, 3, 4,5, 1, 2, 3]
+
+
+8) sort method :
+sort method sort the elements in alphabatical and ascending order 
+
+let arr = [8,4,5,9,3,6,1]
+arr.sort()
+console.log(arr) //    [1, 3, 4, 5,6, 8, 9]
+
+9) splice method:
+
+splice method adds or remove of elments
+splice can have any number of arguments firstOne is staringIndex that we start removing elements and secondIndex is the number of elements to remove and remaining elements are.
+
+let arr = [99,32,23,43,53,100]
+arr.splice(2,3)
+console.log(arr) // [ 99, 32, 100 ]
+
+
+10) slice method:
+    slice has only two arguments firstOne is staringIndex that we start removing elements and secondIndex is the index upto where we need to remove.
+
+let numbers = [1,2,3,4,5,6,]
+
+let num2 = numbers.slice(1,4) // here starting index 1 and end 4 so it will not consider the end index value
+console.log(num2) // [2,3,4] 
+
+
+11)  isArray()
+
+let numbers = [1,2,3,4,5,6]
+//the isArray() Method returns true if an object is an array otherwise false
+console.log(Array.isArray(numbers)); // true
+
+
+12) find()
+
+find of method returns the first element in the provided array that satisfies the provided testing function
+
+if no value is satisfy the testing function undefined is returned
+
+const arr = [5,12,8,130,44]
+
+const found = arr.find((ele) => ele > 10)
+
+console.log(found) // 12
+
+13) includes()
+
+the includes() method returns true if an array contains a specfied value 
+
+const num = [1,2,3]
+
+console.log(num.includes(2)) //true
+
+
+const numbers = [1, 2, 3, 4, 5];
+
+let res = numbers.filter((item, index, array) => {
+  return item > 3;
+});
+
+console.log(res) // [4,5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
