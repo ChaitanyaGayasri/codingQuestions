@@ -32,3 +32,13 @@ Redirect to logged in (once the user logged in user cant navigate to other page)
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
     }
+
+
+
+onClick Logout Functionality : user again login to the functionality 
+
+  const onClickLogout = () => {
+    Cookies.remove('jwt_token')
+    const {history} = props
+    history.replace('/login')
+  }
