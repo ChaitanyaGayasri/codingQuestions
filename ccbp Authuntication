@@ -24,3 +24,11 @@ Jwt Token:
 npm install "js-cookie"
 Store the Jwt to browser
 Cookies.set('jwt_token', jwtToken, {expires: 90})
+
+
+
+Redirect to logged in (once the user logged in user cant navigate to other page)
+    const jwtToken = Cookies.get('jwt_token')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
