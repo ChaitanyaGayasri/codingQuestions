@@ -5,11 +5,22 @@ event.preventDefault()
     const userDetails = {username, password}
     const url = 'https://apis.ccbp.in/login'
     const options = {
-      method: 'POST',
+      method: 'POST',//
       body: JSON.stringify(userDetails),
     }
     const response = await fetch(url, options)
-    const data = await response.json()
+    const data = await response.json() // Jwt Token resp
+
     if (response.ok === true) {
       this.onSubmitSuccess()
     }
+
+history method come from the props 
+
+    history.replace('/')
+    Cookies.set('jwt_token', jwtToken, {expires: 90})
+
+Jwt Token:
+npm install "js-cookie"
+Store the Jwt to browser
+Cookies.set('jwt_token', jwtToken, {expires: 90})
