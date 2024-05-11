@@ -1,10 +1,12 @@
 SQL DIFFRENT DATA TYPES:
 
-DATA TYPES:   1)  integer  (0,-333)
-STRING: VARCHAR ("Chaitanya")
-text: TEXT  (we can store large number of characters )
-float: FLOAT ( 24.3, 345.210) 
-date: DATE (20-07-2020)
-time: TIME (12:00:00)
-DATE & TIME : DATETIME((BOTH DATE AND TIME)
-Boolean: BOOLEAN
+DATA TYPES:
+Data Type	Syntax
+Integer	INTEGER / INT
+Float	FLOAT
+String	VARCHAR
+Text	TEXT
+Date	DATE
+Time	TIME
+Datetime	DATETIME
+Boolean	BOOLEAN
