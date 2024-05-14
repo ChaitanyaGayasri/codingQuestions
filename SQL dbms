@@ -10,3 +10,15 @@ Date	DATE
 Time	TIME
 Datetime	DATETIME
 Boolean	BOOLEAN
+
+
+Comparison Operators:
+Operator	Description
+=	    ->   Equal to
+<>	  ->   Not equal to
+<	    ->   Less than
+<=	  ->   Less than or equal to
+>	    ->   Greater than
+>=	  ->   Greater than or equal to
+
+
