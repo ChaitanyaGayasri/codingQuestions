@@ -22,3 +22,14 @@ Operator	Description
 >=	  ->   Greater than or equal to
 
 
+LIKE Operator
+LIKEoperator is used to perform queries on strings. This operator is especially used inWHEREclause to retrieve all the rows that match the given pattern.
+
+Common Patterns
+Pattern	Example	Description
+
+Exact Match	WHERE name LIKE "mobiles"	Retrieves products whose name is exactly equals to "mobiles"
+Starts With	WHERE name LIKE "mobiles%"	Retrieves products whose name starts with "mobiles"
+Ends With	WHERE name LIKE "%mobiles"	Retrieves products whose name ends with "mobiles"
+Contains	WHERE name LIKE "%mobiles%"	Retrieves products whose name contains with "mobiles"
+Pattern Matching	WHERE name LIKE "a_%"	Retrieves products whose name starts with "a" and have at least 2 characters in length
