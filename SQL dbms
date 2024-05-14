@@ -2,14 +2,14 @@ SQL DIFFRENT DATA TYPES:
 
 DATA TYPES:
 Data Type	Syntax
-Integer	INTEGER / INT
-Float	FLOAT
-String	VARCHAR
-Text	TEXT
-Date	DATE
-Time	TIME
-Datetime	DATETIME
-Boolean	BOOLEAN
+Integer	      INTEGER / INT
+Float	        FLOAT
+String	      VARCHAR
+Text	        TEXT
+Date	        DATE
+Time	        TIME
+Datetime	    DATETIME
+Boolean	      BOOLEAN
 
 
 Comparison Operators:
