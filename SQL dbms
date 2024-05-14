@@ -25,6 +25,15 @@ Operator	Description
 LIKE Operator
 LIKEoperator is used to perform queries on strings. This operator is especially used inWHEREclause to retrieve all the rows that match the given pattern.
 
+
+SELECT
+  *
+FROM
+  product
+WHERE
+  category LIKE "Gadgets"; use like operator
+
+
 Common Patterns
 Pattern	Example	Description
 
