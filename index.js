@@ -397,6 +397,33 @@ for (let i=0; i< arr.length; i++){
 }
 
 console.log(obj) // { aaa: 2, bbb: 2, ccc: 1 } solution
+
+
+
+
+// find the missing number in an array
+
+const arr = [1,2,3,4,5,6,9,10]
+
+
+const missArray = []
+const missingNum = (arr) => {
+  const maxValue = Math.max(...arr)
+  const minValue = Math.min(...arr)
+  
+  for (let i=minValue;i<maxValue;i++) {
+    const name = arr.indexOf(i) 
+    console.log(name)
+    if (arr.indexOf(i) < 0) {  // 0,1,2,3,4,5,-1,-1,6
+      missArray.push(i)
+    }
+  }
+
+  return missArray
+}
+
+console.log(missingNum(arr)) // [7,8]
+
  
 4) HOW TO MAKE A API FETCH CALL IN AN APPLICATION:
 
