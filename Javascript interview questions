@@ -1,0 +1,185 @@
+
+// var a = 2
+// var a = 5
+// console.log(a)
+
+// Implicit Conversion to string
+// let result = "3" + 2
+
+// console.log(result) // "32"
+
+// Implicit Conversion to Number;-
+// numeric string used with -,/,* number type
+
+// let res = "4" - "2"
+// console.log(typeof(res)) // 2 as a number
+
+// implicit boolean conversion to number :-
+// Boolean is used true is 1 , false is 0
+
+// let result = "4" / true
+ 
+// console.log(result)
+
+
+// 1)  toString() method
+
+// returns a string of array of values
+
+// let bikes = ["Yamaha", "Bajaj", "Honda", "TVS"]
+
+// let res = bikes.toString()
+// console.log(res) // "Yamaha, Bajaj, Honda, TVS" // returns string of values
+
+// 2) push() method ;
+
+// let arr = [1, 2, 3, 4]
+
+// arr.push(5)
+// console.log(arr) // [1,2,3,4,5} add one or more elements to end of an existing array and changing the original array
+
+
+// 3)  pop() method ;
+
+// let arr = [1, 2, 3, 4]
+
+// arr.pop()
+
+// console.log(arr) [1,2,3]// removes the last element from an existing array and changing the original array
+
+
+// 4) shift() method ;
+
+// let arr = [1, 2, 3, 4, 5]
+
+// arr.shift()
+// console.log(arr)[2, 3, 4, 5] // remove the first element from an existing array and changing the original array
+
+
+// 5) unshift() method:
+
+// let arr = [1, 2, 3, 4, 5]
+// arr.unshift(6,4)
+
+// console.log(arr) // [6,4,1,2,3,4,5] // add one or more elements from an existing array and changing the original array
+
+
+// 6) concat() method :
+
+// let arr1 = [1, 2, 3, 4]
+
+// let arr2 = [5, 6, 7]
+
+// let res = arr1.concat(arr2)
+
+// console.log(res) // [1,2,3,4,5,6,7]    all the arr2 elements are added to the arr1 and retruns new array
+
+
+// 7) slice() method:
+// slice(firstIndex,endIndex)
+// slice has only two arguments firstone is startingIndex that we satrt remove elements and secondIndex is the index upto where we need to remove
+
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(nums.slice(5)) // [6,7,8]  splice won't modify the array and retrun the remove item as an array
+
+// console.log(nums) // splice wont't modify the array of ele and it remains the same as current arr [1,2,3,4,5,6,7,8]
+
+// console.log(nums.slice(1, 3))// [2,3]  first argument is 1 which means removal of starting from first index means the value is "2" and second argument is 3 means we have to remove upto index 3
+
+// slice method wont' effect the currrent array
+
+// 8) splice method:-
+
+// splice(startingIndex,numberOfElementToRemove, item1,item2, ...item n)
+
+// splice can have number of arguments first one is startingIndex that we start remove elements and secondIndex is the number of elements to remove
+
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(arr.splice(5))  // [6,7,8] splice will modify the array and retrun the removed items as array
+// console.log(arr) // now the existing array will be [1,2,3,4,5]
+
+
+// console.log(arr.splice(1, 3, "hii", 'bro')) // [2,3,4] splice will modify the array and return the remove items as array
+
+
+// console.log(arr) // [1,'hii','bro', 5] // now the elements we passed as argument to arr that will added to existing array
+
+
+
+
+// sort() method :
+
+// let arry = [99,32,23,43,53]
+
+// arry.sort() // [23,32,43,53,99] // first it will sort the elements according to an array decrease to increase
+// console.log(arry)
+
+
+// reverse() method :
+
+
+// reverse method reverse the order of array elements
+
+
+// let num = [1, 2, 3, 4, 5, 6]
+
+// let res = num.reverse()
+// console.log(res)  // [ 6, 5, 4, 3, 2, 1 ]
+
+
+
+
+//  undefined
+
+// var a
+// console.log(a) // undefined when variable is declared but not assigining value on it so that it is called as undefined
+
+// console.log(a)
+// let a = 5  // before initilize we cannot access value on it
+
+
+// a = 5
+// console.log(a) // 5
+
+
+
+
+// console.log([] + []); // empty "
+
+// console.log({} == {})
+
+
+
+// (function () {
+//     var a = b = 5
+// })()
+
+// console.log(typeof (a)) // var a is declared with var but it is local to the function  and it is undefined
+// console.log(typeof(b)) // b = 5 treated a global variable (since no var or const or let is used )
+
+
+
+
+// const obj1 = { a: 1 };
+// const obj2 = { a: 1 };
+// console.log(obj1 == obj2); // false  objects compared to the refrence not by value
+// console.log(obj1 === obj2); // false but both cases we can get false
+
+
+// let x = 10;
+// let y = (x++, x + 1, x * 2); // x++ opertor increment 10 + 1 = 11, 11 + 1 = 12, 11 * 2 = 22
+// console.log(y);  // 22 the , operator evalutes all expressions but returns the value of the last one
+
+
+// console.log(typeof (null)) //  object
+
+// console.log(typeof (NaN)) // Number
+
+
+// function test() {
+//     console.log(this);
+// }
+// test.call(null); // windows or global object
+
+
