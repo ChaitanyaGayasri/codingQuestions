@@ -1,1 +1,81 @@
+▶  (map method)
 
+it invokes a call back function for each element the result call back function is then added to the new arrray
+
+
+const nums = [1, 2, 3, 4]
+
+const multiplyNums = nums.map((num) => {
+    return num + 1
+})
+
+console.log(multiplyNums)
+
+Filter method
+
+
+It invokes the callback function for each element if the call back function returns true for an element the element will included in that element otherwise it will excluded
+if incase of any element of an array met the condition it will return the added elements to new array otherwise it will return false
+
+
+const nums2 = [1,2,3,4]
+
+const moreThanTwo = nums2.filter((num) => {
+    return num > 2
+})
+
+console.log(moreThanTwo)
+
+
+reduce method
+
+ it excutes prrovided callback dunction once for each element in the array resulting  single  output value
+
+acc = 1
+curr = 4
+
+const nums = [1, 2, 3, 4]
+
+const sum = nums.reduce((acc, curr) => {
+    return acc + curr
+})
+
+console.log(sum)
+
+
+
+
+forEach Method
+
+it does not retun new array does not modify the original array its commony used for iteration and performing actions on each array element
+
+
+
+const n = [1, 2, 3];
+n.forEach((num) => console.log(num * 2));
+
+/
+
+find method 
+ it will return first element in the array that satifies given condition
+
+const  n1= [1, 2, 3, 4, 5];
+const fEven = n1.find((num) => num % 2 === 0);
+console.log(fEven); // 2
+
+some function
+
+checks if one array of element satifies a condition it true otherwise retur false
+
+const n = [1, 2, 3, 4, 5];
+const hasNeg = n.some((num) => num < 0);
+console.log(hasNeg);
+
+
+every function
+the every function checks if all the array of elements can satisfy a given condition
+
+const n3 = [1, 2, 3, 4, 5]
+
+const allRes = n3.every((num) => num  > 0)
+console.log(allRes)
