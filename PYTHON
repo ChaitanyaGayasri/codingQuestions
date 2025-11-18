@@ -3,5 +3,14 @@ String to Integer
 
 a = "5"
 a = int(a)
-print(type(a))
-print(a)
+print(type(a)) INT
+print(a) // 5
+
+
+Integer to String
+a = input()
+a = int(a)
+b = input()
+b = int(b)
+result = a + b
+print("Sum: " + str(result))  // Sum : 5
