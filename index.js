@@ -220,7 +220,7 @@ console.log(power(2,4)) // 16
 const reverseString = (str) =>{
   let result = ""
   for (let i = str.length -1; i >= 0; i--) { // reverse the whole string and Values
-    result += str[i]
+    result += str[i] // I have to take one new string loop through the elements  and add those reversed elements to new string 
   }
   return result
 }
