@@ -9,7 +9,7 @@ const bubbleSort = (arr) => {
   let len = arr.length
   for (let i=0; i < len; i++) {
     for(let j=0; j < len; j++){  // 0,1,2,3,4
-      if (arr[j] > arr[j + 1] ) {
+      if (arr[j] > arr[j + 1] ) { // check current ele and previous ele swapped they updated their positions 
       let temp = arr[j]
       arr[j] = arr[j + 1]// Swaping thier position
       arr[j+1] = temp // Reverse the position
@@ -31,7 +31,7 @@ function largestSubArray(arr) {
   for (let i=0; i<arr.length; i++){
     let currentSum = 0
     for (let j=i; j<arr.length; j++) {
-      currentSum = currentSum + arr[j] 
+      currentSum = currentSum + arr[j]  // intially checking subarray of elements and we are checking or looping throug arr finding subarray of elements if we find counting give us single output value 
       console.log(currentSum)// it will add 0 + -2 = -2 or -2 + 1 = -1 etc
       if (currentSum > maxSum){
         maxSum = currentSum
@@ -41,7 +41,7 @@ function largestSubArray(arr) {
   return maxSum
 }
 
-console.log(largestSubArray([-2,1,-3,4,-1,2,1,-5,4])) // 6 [4,-1,2,1]
+console.log(largestSubArray([-2,1,-3,4,-1,2,1,-5,4])) // 6 [4,-1,2,1] 
             
 
 2)   // Write a function that returns the longest word in the sentence returns the string
