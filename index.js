@@ -1,8 +1,6 @@
 DATA STRUCTURES AND ALGORITHEMS OF JAVASCRIPT QUESTIONS
 
-Sorting an array Without using index values;
-
-Qestion1); Sorting an array
+1)
 
 function reverseArray(arr) {
     
@@ -25,11 +23,23 @@ const arr = [1, 4, 3, 2, 6, 5];
 reverseArray(arr);
 console.log(arr.join(" "));
 
+2) Find the maximum and minimum element in an array
+function findMinMax(arr) {
+    
+    //Sort array
+    const sortedArr = [...arr].sort((a, b) => a - b);  // [1,3,4,5,9]
+    
+    return [sortedArr[0], sortedArr[sortedArr.length-1]]; //   1,9
+}
+
+const arr = [3, 5, 4, 1, 9];
+const result = findMinMax(arr);
+console.log(`${result[0]} ${result[1]}`); // 1 9
 
 
+           
 
-
-           or 
+estion1); Sorting an array
 
 const bubbleSort = (arr) => {
   let len = arr.length
