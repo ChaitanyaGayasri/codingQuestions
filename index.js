@@ -4,6 +4,32 @@ Sorting an array Without using index values;
 
 Qestion1); Sorting an array
 
+function reverseArray(arr) {
+    
+    let n = arr.length
+    
+    // Iterate over the first half 
+    // and for every index i, swap 
+    // arr[i] with arr[n - i - 1] // 5,6,2 swap their postions with 1,4,3
+    
+    for(let i=0;i<n/2 ; i++) {
+      let temp = arr[i]
+      arr[i] = arr[n-i-1]  // 
+      arr[n-i-1] = temp
+    }
+}
+
+// Driver Code 
+const arr = [1, 4, 3, 2, 6, 5];
+
+reverseArray(arr);
+console.log(arr.join(" "));
+
+
+
+
+
+           or 
 
 const bubbleSort = (arr) => {
   let len = arr.length
